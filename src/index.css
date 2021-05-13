@@ -15,15 +15,59 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    /* background-color:rgb(0, 65, 85); */
+    background: linear-gradient(167deg, rgb(235, 235, 235) 50%,rgb(174, 0, 255) 50%);
 }
 .counter_card{
     width:50rem;
     height:25rem;
-    background-color:rgb(224, 224, 224);
+    background-color:rgb(243, 241, 241);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius:1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+.counter_card:hover{
+    transform: scale(1.1);
+    transition: transform ease-out 0.5s;
+}
+.heading{
+    font-size:3rem;
+    padding:1.5rem;
+    color:#fff;
+    text-shadow: 0.1rem 0.1rem 0.1rem #000;
+    width:100%;
+    text-align:center;
+    background-color:rgb(174, 0, 255);
+}
+.quantity{
+    margin:2rem 0;
+    background-color:rgb(47, 255, 158);
+    width:30rem;
+    display:flex;
+    justify-content:space-around;
+}
+.quantity .quantity__minus,.quantity__plus{
+    font-size:4rem;
+    text-decoration: none;
+    padding:0 1.7rem;
+    color:#000;
+    background-color:rgb(249, 182, 255);
+}
+.quantity__plus:hover{
+    background-color:rgb(0, 148, 20);
+    color:#fff;
+    cursor:pointer;
+}
+.quantity .quantity__minus:hover{
+    background-color:rgb(255, 0, 0);
+    color:#fff;
+    cursor: pointer;
+}
+.quantity .quantity__input{
+    text-align:center;
+    font-size:2rem;
+    border:none;
+    outline:none;
+} 
